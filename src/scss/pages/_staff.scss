@@ -1,0 +1,81 @@
+
+/* Staff Section */
+.staff-container {
+	margin-bottom: 70px;
+
+	h2 {
+		margin: 40px auto;
+		font-family: 'Hirakakuw6';
+		font-size: 32px;
+	}
+	p {
+		margin: 46px auto 30px;
+		font-size: 18px;
+	}
+}
+.staff {
+	margin: 28px auto 39px auto;
+
+	img {
+		max-width: 100%;
+		border-radius: 50%;
+		border: 14px solid #e7e7e7;
+		margin-bottom: 20px;
+	}
+
+	.staff-name {
+		font-family: 'Hirakakuw6';
+		font-size: 18px;
+	}
+
+	.staff-designation {
+		font-size: 14px;
+		margin-bottom: 8px;
+	}
+}
+
+
+/* Construct */ 
+
+.construct-container {
+	margin-bottom: 174px;
+}
+.construct-item {
+	margin: 41px auto 88px;
+}
+.construct-content {
+	margin-top: 33px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	.col-md-7 {
+		margin-left: -15px;
+		padding-left: 0;
+	}
+}
+.construct-title {
+	font-size: 24px;
+	margin-left: 14px;
+}
+.construct-row {
+	border-bottom: 1px solid #b0b0b0;
+	display: flex;
+	
+	.construct-left,
+	.construct-right {
+		display: inline-block;
+		padding: 20px 21px 18px;
+		font-size: 18px;
+		color: #333333;
+		line-height: 1.7;
+	}
+
+	.construct-left {
+		min-width: 260px;
+		background-color: #eeeeee;
+	}
+
+	.construct-right {
+		margin-left: 33px;
+	}
+}

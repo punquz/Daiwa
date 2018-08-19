@@ -1,0 +1,595 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Hirakakuw3';
+    src: url("../font/hirakakupro-w3.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Hirakakuw6';
+    src: url("../font/hirakakupro-w6.otf") format("opentype");
+}
+
+body {
+    position: relative;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hirakakuw3', 'Hirakakuw6', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*
+ * For IE 6/7 only
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*  */
+
+.container {
+    max-width: 1020px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.to-top {
+    position: absolute;
+    bottom: 60px;
+    right: 190px;
+    border: 1px solid #b5b5b5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+
+.hr-line {
+    width: 35%;
+    display: block;
+    background: #438800;
+    height: 4px;
+    margin: 20px auto;
+}
+
+.hr-line2 {
+    background: #efefef;
+    height: 3px;
+    position: relative;
+}
+
+.hr-line2:before {
+    position: absolute;
+    content: '';
+    background: #438800;
+    height: 3px;
+    width: 21.3%;
+}
+
+.hr-line3 {
+    width: 36%;
+    background: #438800;
+    height: 4px;
+    margin: 20px auto;
+}
+
+.p-lr {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-nav {
+    margin-left: 8.4%;
+}
+
+.navbar-nav li {
+    position: relative;
+    padding: 0 3.8rem 0 3rem;
+    border-right: 1px solid #727475;
+}
+
+.navbar-nav li:first-child {
+    padding-left: 0;
+}
+
+.navbar-nav li:last-child {
+    border-right: 0;
+}
+
+.navbar-nav .active:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #42880e;
+    left: 0;
+    bottom: -8px;
+}
+
+.navbar-nav a {
+    padding: 0 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+}
+
+.breadcrumb-container {
+    background-color: #eeeeee;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .3rem;
+    color: #000;
+    content: ">";
+}
+
+.breadcrumb-item.active {
+    color: inherit;
+}
+
+.breadcrumb {
+    padding: .70rem 1rem;
+}
+
+.breadcrumb a {
+    font-size: 14px;
+}
+
+.breadcrumb li {
+    font-size: 14px;
+}
+
+.breadcrumb li:first-child a {
+    text-decoration: underline;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .2rem;
+}
+
+.title {
+    margin: 40px auto;
+    font-family: 'Hirakakuw6';
+    font-size: 32px;
+}
+
+header {
+    border-top: 3px solid #438800;
+    padding-top: 20px;
+    border-bottom: 2px solid #8b8b8b;
+}
+
+header nav {
+    margin-top: 12px;
+}
+
+.logo {
+    padding-left: 12px;
+}
+
+.contact-btn {
+    margin-top: 10px;
+    background-color: #438800;
+    padding: 8px 40px 8px 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    position: relative;
+}
+
+.contact-btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 12px;
+    border-color: transparent transparent transparent #ffffff;
+    display: inline-block;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
+
+footer {
+    background-color: #438800;
+    color: #fff;
+    padding: 13px 0;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/*.slider {
+    background-image: url("../img/headerslide.jpg");
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 92vh;
+    position: relative;
+}*/
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider img{
+    max-width: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.slider h2 {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Hirakakuw6', arial;
+    text-shadow: 0px 0px 19.2px rgba(0, 0, 0, 0.68);
+    font-size: 48px;
+}
+
+.solution {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.solution a {
+    color: inherit;
+}
+
+.solution a:hover {
+    text-decoration: none;
+}
+
+.solution h2 {
+    margin-bottom: 23px;
+    font-family: 'Hirakakuw6', sans-serif;
+    font-size: 36px;
+}
+
+.solution h2+div+p {
+    width: 85%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 65px;
+    line-height: 1.8;
+}
+
+.solution .row {
+    padding: 0 15px;
+}
+
+.solution h3 {
+    font-family: 'Hirakakuw6', sans-serif;
+    font-size: 24px;
+}
+
+.solution .col-md-6:nth-of-type(odd) {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.solution .col-md-6:nth-of-type(even) {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.solution-item {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.solution-item img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.solution-item h3 {
+    margin-bottom: 5px;
+}
+
+.solution-item .rec-text-sp{
+    font-size: 18px;
+    color: #333333;
+}
+.solution-item h3,
+.solution-item p {
+    padding: 0 10px;
+}
+
+.solution-item p {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.brands .brand-img {
+    border: 1px solid #ccc;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 75px;
+}
+
+.brands .row {
+    margin-top: 52px;
+    margin-bottom: 100px;
+    padding: 0 15px;
+}
+
+.brands h2 {
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+.brands .col-md-3 {
+    padding: 0 3px;
+}
+
+.brands .col-md-3:first-child {
+    padding-left: 0;
+}
+
+.brands .col-md-3:last-child {
+    padding-right: 0;
+}
+
+
+/* Staff Section */
+
+.staff-container {
+    margin-bottom: 70px;
+}
+
+.staff-container h2 {
+    margin: 40px auto;
+    font-family: 'Hirakakuw6';
+    font-size: 32px;
+}
+
+.staff-container p {
+    margin: 46px auto 30px;
+    font-size: 18px;
+}
+
+.staff {
+    margin: 28px auto 39px auto;
+}
+
+.staff img {
+    max-width: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 14px solid #e7e7e7;
+    margin-bottom: 20px;
+}
+
+.staff .staff-name {
+    font-family: 'Hirakakuw6';
+    font-size: 18px;
+}
+
+.staff .staff-designation {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+/* Construct */
+
+.construct-container {
+    margin-bottom: 174px;
+}
+
+.construct-item {
+    margin: 41px auto 88px;
+}
+
+.construct-content {
+    margin-top: 33px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.construct-content .col-md-7 {
+    margin-left: -15px;
+    padding-left: 0;
+}
+
+.construct-title {
+    font-size: 24px;
+    margin-left: 14px;
+}
+
+.construct-row {
+    border-bottom: 1px solid #b0b0b0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.construct-row .construct-left,
+.construct-row .construct-right {
+    display: inline-block;
+    padding: 20px 21px 18px;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.7;
+}
+
+.construct-row .construct-left {
+    min-width: 260px;
+    background-color: #eeeeee;
+}
+
+.construct-row .construct-right {
+    margin-left: 33px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .logo {
+        max-width: 100%;
+    }
+    .to-top {
+        right: 15px;
+    }
+    .slider h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .brands img {
+        max-width: 100%;
+    }
+    .construct-container img {
+        max-width: 100%;
+    }
+    .construct-content .col-md-7 {
+        margin-left: 0;
+    }
+    .construct-row .construct-left {
+        min-width: 25vw;
+    }
+    .construct-row .construct-right {
+        padding-right: 5px;
+    }
+
+    .staff-container p{
+        font-size: 16px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .brands .col-6 {
+        padding: 3px;
+    }
+    .brands .col-6:nth-of-type(odd) {
+        padding-left: 0;
+    }
+    .brands .col-6:nth-of-type(even) {
+        padding-right: 0;
+    }
+    .brands .brand-img {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .staff-container p{
+        font-size: 16px;
+        width: 85%;
+    }
+    .slider h2 {
+        font-size: 36px;
+    }
+    .solution .col-md-6:nth-of-type(odd),
+    .solution .col-md-6:nth-of-type(even) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+       .solution h2+div+p {
+        width: 85%;
+    }
+
+    ./*slider {
+        background-size: contain;
+        min-height: 20vh;
+        height: 100%;
+    }*/
+
+    .slider h2 {
+        font-size: 22px;
+    }
+
+    .construct-item .d-flex {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .construct-item img {
+        display: block;
+        text-align: center;
+        margin: 0 auto 25px;
+    }
+    .construct-row .construct-left {
+        min-width: 35vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .solution h2+div+p {
+    width: 85%;
+    }
+    .slider h2 {
+        font-size: 20px;
+    }
+    .solution h2 {
+        font-size: 28px;
+    }
+    .construct-row .construct-right {
+        margin-left: 10px;
+    }
+
+    .staff-container p{
+        font-size: 16px;
+        width: 85%;
+    }
+}
